@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTTP Request Response</title>
+    <script src="https://code.jquery.com/jquery..."></script>
+  </head>
+  <body>
+    
+    <!-- <div id="links"> -->
+        <!-- <img src="http://pokeapi.co/media/img/"+[i]+".png"> -->
+         <!-- <img src="http://pokeapi.co/media/img/2.png" alt="bulbasaur"> add http:// before the website name   -->
+    <!-- <video src="http://a1068.v.phobos.apple.co..."controls></video>  -->
+        <!-- <img src="http://pokeapi.co/media/img/3.png">
+        <img src="http://pokeapi.co/media/img/4.png">
+        <img src="http://pokeapi.co/media/img/5.png">
+        <img src="http://pokeapi.co/media/img/6.png">
+        <img src="http://pokeapi.co/media/img/7.png">
+        <img src="http://pokeapi.co/media/img/27.png"> -->
+     <!-- <img[http://pokeapi.co/media/img/$.png]*151>  -->
+    <!-- </div>  -->
+    <div id="links">
+        </div>
+
+    <script>
+
+        
+
+        var strLinks = ''; 
+        for (var i = 1; i <= 155; i++) {
+            strLinks += '<a href="'+ i +'.html"><img src="http://pokeapi.co/media/img/'+ i +'.png"></a>';
+            }
+            document.getElementById("links").innerHTML = strLinks;
+
+        
+        
+       
+    </script>
+  </body>
+</html>
