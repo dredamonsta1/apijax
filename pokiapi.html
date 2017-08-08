@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTTP Request Response</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/jquery..."></script>
   </head>
   <body>
@@ -32,7 +33,10 @@
             document.getElementById("links").innerHTML = strLinks;
 
         
-        
+        // $.get("http://pokeapi.co/api/v1/pokemon/1/", function(res) {
+        //     $('#info').html("<h2>" + res.abilities[0].name + "</h2>");
+        //     console.log(res.abilities[0].name);
+        // }, 'json');       
        
     </script>
   </body>

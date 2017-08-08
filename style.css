@@ -1,0 +1,23 @@
+#container{
+    /* font-family: sans-serif; */
+    height: 1000px;
+    width: 1000px;
+    position: relative;
+}
+
+#names {
+    /* background-color: red; */
+    position: absolute;
+    top: 0px;
+    left: 810px;
+    height: 600px;
+    width: 300px;
+    float: right;
+    border: 3px solid #73AD21;
+}
+
+#links{
+    height: 800px;
+    width: 800px;
+    /* border: 3px solid yellow; */
+}
