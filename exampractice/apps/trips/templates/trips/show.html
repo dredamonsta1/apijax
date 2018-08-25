@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <title>Show</title>
+  </head>
+  <body class="container-fluid">
+  <div class="navbar navbar-default">
+    <a class="navbar-text" href = '{% url 'trips:home' %}'>Home</a><a class="navbar-text" href = '{% url 'loginreg:logout' %}'>Logout</a>
+  </div>
+    <div class="text-center">
+      <h1><p>Destination: <u><strong class="text-uppercase">{{trip.new_destination}}</strong></u></p></h1>
+      <h3><p>Planned by: <strong class="text-uppercase">{{trip.planner.name}}</strong></p></h3>
+      <h3><p>Description: <strong class="text-uppercase">{{trip.new_description}}</strong></p></h3>
+      <h3><p>Travel Start: <strong class="text-uppercase">{{trip.trip_start}}</strong></p></h3>
+      <h3><p>Travel End: <strong class="text-uppercase">{{trip.trip_end}}</strong></p></h3>
+    <!-- <h1>Other Users Joining the Trip</h1>
+    <div>
+      {% for otherusersplans in trip. %}
+        <p>{{otherusersplans.user.name}}</p>
+      {% endfor %}
+    </div> -->
+  </div>
+  </body>
+</html>

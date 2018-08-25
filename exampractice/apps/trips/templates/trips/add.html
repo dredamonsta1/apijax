@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <title>Add Trip</title>
+  </head>
+  <body class="container-fluid">
+    <div class="navbar navbar-default">
+      <a class="navbar-text" href = '{% url 'trips:home' %}'>Home</a><a class="navbar-text" href = '{% url 'loginreg:logout' %}'>Logout</a>
+    </div>
+    <form action ='/trips/entertrip' method='POST'>
+		  {% csrf_token %}
+      <div class="form-group">
+        <label>Destination:<input class="form-control" type='text' name='new_destination'></label><br>
+      </div>
+      <div class="form-group">
+  		  <label>Description:<input class="form-control" type='text' name='new_description'></label><br>
+      </div>
+  		<div class="form-group">
+  		  <label>Travel Date From:<input class="form-control" type='date' name='trip_start'></label><br>
+      </div>
+      <div class="form-group">
+  		  <label>Travel Date To:<input class="form-control" type='date' name='trip_end'></label><br>
+  		<input class="btn btn-primary" type='submit' value='Add Trip'>
+	</form>
+  </body>
+</html>
